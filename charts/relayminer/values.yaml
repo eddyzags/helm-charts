@@ -48,6 +48,9 @@ config:
   pprof:
     enabled: true
     addr: localhost:6060
+  forward:
+    enabled: false
+    addr: :10000
 
 development:
   delve:
@@ -73,6 +76,9 @@ metrics:
   serviceMonitor:
     enabled: false
   port: 9090
+
+forward:
+  port: 10000
 
 podAnnotations: {}
 podLabels: {}
